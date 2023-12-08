@@ -16,7 +16,7 @@ const fetchUsers = async () => {
     const fakeUserContainer = document.getElementById("fakeUser-wrapper");
     const { title, first, last } = e.name,
       { city, country } = e.location,
-      {email} = e,
+      { email } = e,
       { latitude, longitude } = e.location.coordinates,
       { date } = e.registered,
       { large } = e.picture;
