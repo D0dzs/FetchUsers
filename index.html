@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Users</title>
+    <!-- Latest TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="transition-colors dark:bg-neutral-800 dark:text-white bg-stone-50 text-black p-2">
+    <main>
+        <div id="root" class="overflow-x-hidden">
+            <div id="hero-wrapper" class="flex gap-1 items-center flex-col mb-8">
+                <div class="flex gap-1 text-xl mb-2">
+                    Fetch User(s) from
+                    <a href="https://randomuser.me/api" target="_blank" class="font-medium">
+                        <q>randomuser.me/api</q>
+                    </a>
+                </div>
+                <div class="flex gap-1 text-xl mb-2">
+                    <i class="mr-2">Fake User(s) amount</i>
+                    <input id="fkuAmount" type="number" min="1" max="20" value="1" class="block p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>
+                <button id="fetchUsers" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Fetch Users</button>
+            </div>
+            <div id="fakeUser-wrapper" class="grid grid-cols-1 items-center gap-4 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6"></div>
+        </div>
+    </main>
+</body>
+
+</html>
